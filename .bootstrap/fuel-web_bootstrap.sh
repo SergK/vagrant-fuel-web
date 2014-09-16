@@ -3,16 +3,13 @@
 # We are not using virtualenv as this box is completly for fuel-web project
 # share-folder
 
-# Remove ISO virtualbox
-rm /home/vagrant/VBoxGuestAdditions.iso
-
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y
 sudo apt-get install git -y
 
 sudo chown vagrant.vagrant -R /home/vagrant/
 
 # install packages for building docs
-sudo apt-get install python-pip python-dev make postgresql postgresql-server-dev-9.1 libyaml-dev nginx-light -y
+sudo apt-get install python-pip python-dev make postgresql postgresql-server-dev-all libyaml-dev nginx-light -y
 
 # we need to upgrade pip and setuptools
 sudo pip install pip --upgrade

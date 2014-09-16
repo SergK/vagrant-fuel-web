@@ -12,7 +12,7 @@ system({"VPATH" => File.dirname(__FILE__)}, "if [ ! -d ${VPATH}/fuel-web/.git ] 
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.box = "ubuntu-12-04-x64"
+  config.vm.box = "ubuntu-14.04"
 
   config.vm.provider "virtualbox" do |v|
         v.memory = 1048
